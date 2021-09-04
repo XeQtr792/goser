@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
-
 func main() {
-	fmt.Printf("test")
+	getName()
+}
+
+func getName() string {
+	return "test"
 }
