@@ -12,7 +12,14 @@
     "semantic-release-github-pr": "^6.0.1"
   },
   "release": {
-    "branches": [ "master" ]
+    "branches": [ 
+      "+([1-9])?(.{+([1-9]),x}).x",
+		  "master",
+		  "next",
+		  "next-major",
+		  {"name": "beta", "prerelease": true},
+		  {"name": "alpha", "prerelease": true}
+     ]
   },
   "scripts": {
     "prepare": "husky install"
