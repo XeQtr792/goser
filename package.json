@@ -11,6 +11,9 @@
     "semantic-release": "^17.4.7",
     "semantic-release-github-pr": "^6.0.1"
   },
+  "release": {
+    "branches": [ "master" ]
+  },
   "scripts": {
     "prepare": "husky install"
   },
